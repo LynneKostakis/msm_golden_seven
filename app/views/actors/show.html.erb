@@ -1,0 +1,26 @@
+<h1> Actor Details</h1>
+
+<p>
+    
+    <%= @actor.name %>
+    <br>
+     <%= @actor.dob %>
+     <br>
+     <%= @actor.bio %>
+</p>
+   <%= @actor.image_url %>
+<img src= "<%= @actor.image_url %>">
+
+  <br>
+
+
+  <a href= "/actors">Go back</a> 
+
+   <br>
+
+  <a href= "/actors/<%= @actor.id %>/edit">Edit actor</a>
+  <br>
+  
+  <a href= "/delete_actors/<%= @actor.id %>">Delete actor</a>
+
+ 
