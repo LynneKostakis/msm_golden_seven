@@ -1,0 +1,35 @@
+<h1>All Directors</h1>
+
+<p>
+  <a href= "/directors/new"> Add a new director  </a>  
+   
+</p>
+
+
+<ul>
+  <% @directors.each do |the_item| %>
+ 
+   <img src= "<%= the_item.image_url %>">
+   
+
+
+  <br/>
+
+ <a href= "/directors/<%= the_item.id %>"> Details  </a>
+
+ 
+
+   <br>
+
+  <a href= "/directors/<%= the_item.id %>/edit">Edit</a>
+  <br>
+  
+  <a href= "/delete_directors/<%= the_item.id %>">Delete</a>
+  <br>
+  
+  <% end %>
+</ul>
+
+
+
+
