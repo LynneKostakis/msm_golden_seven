@@ -1,7 +1,7 @@
 <h1>All Actors</h1>
 
 <p>
-  <a href= "/actors/new"> Add a new actor  </a>  
+  <a href= "/actors/new">Create actor</a>  
    
 </p>
 
@@ -11,7 +11,8 @@
   <% @actors.each do |the_item| %>
  
    <img src= "<%= the_item.image_url %>">
-   
+   <br>
+   <%= the_item.image_url %>
    <br>
     <%= the_item.name %>
     <br>
@@ -21,7 +22,7 @@
 
   <br/>
 
- <a href= "/actors/<%= the_item.id %>">Show Details</a>
+ <a href= "/actors/<%= the_item.id %>">Show details</a>
 
  
 
