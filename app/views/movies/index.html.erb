@@ -1,0 +1,43 @@
+<h1>All Movies</h1>
+
+<p>
+  <a href= "/movies/new">Add a new movie</a>  
+   
+</p>
+
+
+<ul>
+  <% @movies.each do |the_item| %>
+ 
+   <img src= "<%= the_item.image_url %>">
+      <br>
+   <%= the_item.image_url%>
+   <br>
+    <%= the_item.title %>
+    <br>
+     <%= the_item.description%>
+     <br>
+     <%= the_item.year%>
+     <br>
+     <%= the_item.duration%>
+
+  <br/>
+
+ <a href= "/movies/<%= the_item.id %>">Show details</a>
+
+ 
+
+   <br>
+
+  <a href= "/movies/<%= the_item.id %>/edit">Edit</a>
+  <br>
+  
+  <a href= "/delete_movies/<%= the_item.id %>">Delete</a>
+  <br>
+  
+  <% end %>
+</ul>
+
+
+
+
