@@ -10,12 +10,16 @@
   <% @directors.each do |the_item| %>
  
    <img src= "<%= the_item.image_url %>">
-   
-
+   <br>
+    <%= the_item.name %>
+    <br>
+     <%= the_item.dob %>
+     <br>
+     <%= the_item.bio %>
 
   <br/>
 
- <a href= "/directors/<%= the_item.id %>"> Details  </a>
+ <a href= "/directors/<%= the_item.id %>">Show Details</a>
 
  
 
